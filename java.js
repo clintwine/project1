@@ -68,3 +68,5 @@ function Rectangle(height, width) {
 var rex = new Rectangle(7,3);
 var area = rex.calcArea();
 var perimeter = rex.calcPerimeter();
+
+//Testing my Git functionality
