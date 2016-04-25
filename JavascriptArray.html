@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>javascript</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  
+  <body>
+    
+    <button id="myButton">Change Text</button>
+    <div id="firstDiv"> This is my original Text</div>
+   
+    
+    <script type="text/javascript">
+    
+    
+      var myArray = new Array();
+      myArray[0]="pizza";
+      myArray[1]="Chocolate";
+      
+      mySecondArray=["rain","sunshine"];
+      mySecondArray.push("snow");  //appending snow to the array items
+      mySecondArray.splice(1, 2); //starts at the 1 array which is sunshine and take 2 out 
+      mySecondArray.splice(1, 0, "hail"); // just before the 1 item (sunshine),don't take out any, add hail there
+      mySecondArray.splice(1, 0, "hail", "cloudy"); //add more items
+      
+      
+      
+      console.log(mySecondArray);
+      
+      document.getElementById("myButton").onclick=function(){
+         document.getElementById("firstDiv").innerHTML= myArray[0];
+      }
+      
+    
+      
+    </script>
+    
+  </body>
+  
+</html>
